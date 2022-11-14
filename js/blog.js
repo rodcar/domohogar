@@ -1,19 +1,18 @@
 import {Publicacion} from './entidades/Publicacion.js';
+import {PublicacionDAO} from './daos/PublicacionDAO.js';
 
 document.addEventListener("DOMContentLoaded", function() {
-    fetch('data/publicaciones.json')
-    .then(response => response.json())
-    .then(data => {
-        let publicaciones = [];
-        for(let element of data) publicaciones.push(Publicacion.from(element));
-
-        let publicacionesDiv = document.getElementById("publicaciones");
-        let html = "";
-
-        for(let publicacion of publicaciones) {
-            html += publicacion.getHTML();
-        }
-
-        publicacionesDiv.innerHTML = html;
-    });
+    loadPublicaciones();
 });
+
+async function loadPublicaciones() {
+    let publicacionesDao = new PublicacionDAO();
+    let items = await publicacionesDao.fetchAll();
+    
+    let html = "";
+    for(let publicacion of items) {
+        html += publicacion.getHTML();
+    }
+
+    document.getElementById("publicaciones").innerHTML = html;
+}
