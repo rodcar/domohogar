@@ -13,4 +13,18 @@ export class Publicacion {
     static from(json){
         return Object.assign(new Publicacion(), json);
     }
+
+    getHTML() {
+        return `
+        <div class="card mb-4">
+            <img class="card-img-top" src="${this.imagenPrincipalURL}" alt="Card image cap">
+            <div class="card-body">
+                <h3>${this.titulo}</h3>
+                <small>${this.fechaDePublicacion}</small>
+                <p><b>${this.autor}</b> (@${this.instagram})</p>
+                <p class="card-text">${this.contenido}</p>
+            </div>
+        </div>
+        `;
+    }
 }
