@@ -7,11 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
 async function loadPublicaciones() {
     let publicacionesDao = new PublicacionDAO();
     let items = await publicacionesDao.fetchAll();
-    
-    let html = "";
-    for(let publicacion of items) {
-        html += publicacion.getHTML();
-    }
 
-    document.getElementById("publicaciones").innerHTML = html;
+    for(let publicacion of items) {
+        document.getElementById("publicaciones").innerHTML += publicacion.getHTML();
+    }
 }
