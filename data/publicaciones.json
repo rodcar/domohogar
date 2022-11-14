@@ -1,15 +1,17 @@
 [
     {
+        "id": 0,
         "titulo": "Google Nest Mini, análisis: cambios imperceptibles para la vista, pero no para el oído",
-        "imagenPrincipal": "https://i.blogs.es/289717/porti/1366_2000.jpg",
+        "imagenPrincipalURL": "https://i.blogs.es/289717/porti/1366_2000.jpg",
         "fechaDePublicacion": "5/10/2022",
         "autor": "Ivan Rodriguez",
         "instagram": "ivanrodriguezc",
         "contenido": "Aunque la segunda generación del Google Home Mini ha perdido el apellido de Google por el camino, por lo demás este Nest Mini recuerda mucho a la versión anterior... al menos a simple vista. Porque los cambios más importantes están en su interior, con un tercer micrófono, un chip dedicado para mejorar el sonido y unos bajos el doble de potentes, según explica la gran G. Hemos probado el Nest Mini para ver cómo es y suena esta evolución."
     },
     {
+        "id": 1,
         "titulo": "Echo Dot (5ª generación), análisis: más inteligente y con todo lo mejor de su predecesor",
-        "imagenPrincipal": "https://i.blogs.es/385dc6/2/1366_2000.jpg",
+        "imagenPrincipalURL": "https://i.blogs.es/385dc6/2/1366_2000.jpg",
         "fechaDePublicacion": "11/11/2022",
         "autor": "Ivan Rodriguez",
         "instagram": "ivanrodriguezc",
