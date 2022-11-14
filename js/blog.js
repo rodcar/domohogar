@@ -1,7 +1,7 @@
 import {Publicacion} from './entidades/Publicacion.js';
 
 document.addEventListener("DOMContentLoaded", function() {
-    fetch('/data/publicaciones.json')
+    fetch('data/publicaciones.json')
     .then(response => response.json())
     .then(data => {
         let publicaciones = [];
