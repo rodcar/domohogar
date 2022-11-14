@@ -10,10 +10,6 @@ export class Publicacion {
         this.contenido = contenido;
     }
     
-    static from(json){
-        return Object.assign(new Publicacion(), json);
-    }
-
     getHTML() {
         return `
         <div class="card mb-4">
