@@ -1,4 +1,3 @@
-import {Publicacion} from './entidades/Publicacion.js';
 import {PublicacionDAO} from './daos/PublicacionDAO.js';
 
 document.addEventListener("DOMContentLoaded", function() {
