@@ -15,4 +15,11 @@ export class JsonDAO {
         });
         return this.items;
     }
+
+    async fectchById(id) {
+        let items = await this.fetchAll();
+        return this.items.filter(function(item) {
+            return item.id == id;
+        })[0] || [];
+    }
 }
