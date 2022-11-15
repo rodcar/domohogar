@@ -10,21 +10,205 @@
         "marca": "NEXXT",
         "precio": 109.9,
         "categoria": "Focos",
-        "relacionados": [1, 2],
-        "detalle": "Los focos inteligentes Nexxt A19 puede emparejarse fácilmente a través de la aplicación Nexxt Home. Actívala por voz, mediante Amazon o Google Assistant."
+        "relacionados": [
+            1,
+            2
+        ],
+        "detalle": "Los focos inteligentes Nexxt A19 puede emparejarse fácilmente a través de la aplicación Nexxt Home. Actívala por voz, mediante Amazon o Google Assistant.",
+        "stock": 10
     },
     {
         "id": 1,
-        "nombre": "Alexa",
-        "precio": 120,
-        "categoria": "Parlantes",
-        "relacionados": [2, 0]
+        "nombre": "Foco led inteligente Xiaomi Mi Smart Bulb Essential",
+        "images": [
+            "https://coolboxpe.vtexassets.com/arquivos/ids/206027-800-auto?v=637814018532370000&width=800&height=auto&aspect=true",
+            "https://coolboxpe.vtexassets.com/arquivos/ids/206028-800-auto?v=637814018658800000&width=800&height=auto&aspect=true",
+            "https://coolboxpe.vtexassets.com/arquivos/ids/217245-800-auto?v=637921333051800000&width=800&height=auto&aspect=true"
+        ],
+        "marca": "XIAOMI",
+        "precio": 69.0,
+        "categoria": "Focos",
+        "relacionados": [
+            1,
+            2
+        ],
+        "detalle": "Con el foco Inteligente Xiaomi Mi Smart Led Bulb Essential, ilumina tu hogar con más de 16 millones de colores, con distinto brillo y temperatura. Ajusta la iluminación y personalízala para darle ambiente a cualquier habitación. Este foco smart Xiaomi cuenta con un módulo integrado que le permite conectarse a Wifi, a través de la aplicación Mi Home. Además, admite control por voz; a través de Amazon Alexa y el Asistente de Google.",
+        "stock": 10
     },
     {
         "id": 2,
-        "nombre": "Google Home Mini",
-        "precio": 110,
-        "categoria": "Parlantes",
-        "relacionados": [1]
+        "nombre": "Foco musical Opalux OP-BT9W 9W",
+        "images": [
+            "https://coolboxpe.vtexassets.com/arquivos/ids/193258-800-auto?v=637708590459030000&width=800&height=auto&aspect=true",
+            "https://coolboxpe.vtexassets.com/arquivos/ids/193259-800-auto?v=637708590507070000&width=800&height=auto&aspect=true",
+            "https://coolboxpe.vtexassets.com/arquivos/ids/193260-800-auto?v=637708590549830000&width=800&height=auto&aspect=true"
+        ],
+        "marca": "OPALUX",
+        "precio": 61.9,
+        "categoria": "Focos",
+        "relacionados": [
+            1,
+            2
+        ],
+        "detalle": "Diversión e iluminación con el Foco Led musical Opalux OP-BT9W, cuenta con conexión Bluetooth, contrólalo de manera remota.",
+        "potencia": "9W",
+        "app": "iLink",
+        "stock": 10
+    },
+    {
+        "id": 3,
+        "nombre": "Foco inteligente Philips Hue Filamento Edison ST64",
+        "images": [
+            "https://coolboxpe.vtexassets.com/arquivos/ids/194789-800-auto?v=637733902883270000&width=800&height=auto&aspect=true",
+            "https://coolboxpe.vtexassets.com/arquivos/ids/194790-800-auto?v=637733903110900000&width=800&height=auto&aspect=true",
+            "https://coolboxpe.vtexassets.com/arquivos/ids/194791-800-auto?v=637733903250200000&width=800&height=auto&aspect=true"
+        ],
+        "marca": "PHILIPS HUE",
+        "precio": 99.0,
+        "categoria": "Focos",
+        "relacionados": [
+            1,
+            2
+        ],
+        "detalle": "El foco smart Philips Hue Filamento Edison ST64 agrega un toque vintage a tu iluminación convencional. Esta luz LED simula una bombilla incandescente alargada.",
+        "stock": 10
+    },
+    {
+        "id": 4,
+        "nombre": "Lámpara inteligente Xiaomi Mi Bedside Lamp",
+        "images": [
+            "https://coolboxpe.vtexassets.com/arquivos/ids/210564-800-auto?v=637866225047800000&width=800&height=auto&aspect=true",
+            "https://coolboxpe.vtexassets.com/arquivos/ids/197182-800-auto?v=637765057287500000&width=800&height=auto&aspect=true",
+            "https://coolboxpe.vtexassets.com/arquivos/ids/210566-800-auto?v=637866225219000000&width=800&height=auto&aspect=true"
+        ],
+        "marca": "XIAOMI",
+        "precio": 189.9,
+        "categoria": "Focos",
+        "relacionados": [
+            1,
+            2
+        ],
+        "detalle": "La lámpara Mi Bedside Lamp 2 se sincroniza con tu smartphone mediante bluetooth y también se conecta a la red wifi de tu hogar.",
+        "stock": 10
+    },
+    {
+        "id": 5,
+        "nombre": "Foco Led Wiz Wifi A60 9W Luz Varios Colores Ajustable",
+        "images": [
+            "https://sodimac.scene7.com/is/image/SodimacPeru/3957802_01?fmt=jpg&fit=fit,1&wid=420&hei=420",
+            "https://sodimac.scene7.com/is/image/SodimacPeru/3957802_12?fmt=jpg&fit=fit,1&wid=420&hei=420",
+            "https://sodimac.scene7.com/is/image/SodimacPeru/3957802_26?fmt=jpg&fit=fit,1&wid=420&hei=420"
+        ],
+        "marca": "Wiz",
+        "precio": 59.9,
+        "categoria": "Focos",
+        "relacionados": [
+            1,
+            2
+        ],
+        "detalle": "Foco inteligente Wiz, se conecta con Alexa y Google Home Mini.",
+        "stock": 10
+    },
+    {
+        "id": 6,
+        "nombre": "Parlante inteligente Google Nest Mini con control de voz, negro",
+        "images": [
+            "https://coolboxpe.vtexassets.com/arquivos/ids/186716-1200-auto?v=637599077024700000&width=1200&height=auto&aspect=true",
+            "https://coolboxpe.vtexassets.com/arquivos/ids/211772-1200-auto?v=637879044756800000&width=1200&height=auto&aspect=true",
+            "https://coolboxpe.vtexassets.com/arquivos/ids/211774-1200-auto?v=637879044982830000&width=1200&height=auto&aspect=true"
+        ],
+        "marca": "GOOGLE",
+        "precio": 139.00,
+        "categoria": "Parlantes Inteligentes",
+        "relacionados": [
+            1,
+            2
+        ],
+        "detalle": "¡Pásala bien con el Parlante inteligente Google Nest Mini con control de voz, negro desde donde estés!"
+    },
+    {
+        "id": 7,
+        "nombre": "Altavoz inteligente Xiaomi Smart Speaker IR, con asistente de voz Google, negro",
+        "images": [
+            "https://coolboxpe.vtexassets.com/arquivos/ids/221466-1200-auto?v=637941239497070000&width=1200&height=auto&aspect=true",
+            "https://coolboxpe.vtexassets.com/arquivos/ids/221465-1200-auto?v=637941239487070000&width=1200&height=auto&aspect=true",
+            "https://coolboxpe.vtexassets.com/arquivos/ids/221464-1200-auto?v=637941239486430000&width=1200&height=auto&aspect=true"
+        ],
+        "marca": "XIAOMI",
+        "precio": 179.00,
+        "categoria": "Parlantes Inteligentes",
+        "relacionados": [
+            1,
+            2
+        ],
+        "detalle": "Con el altavoz inteligente Xiaomi Smart Speaker IR disfruta de todas las posibilidades del mundo smart."
+    },
+    {
+        "id": 8,
+        "nombre": "Altavoz inteligente Amazon Echo Dot 4ta generación, control de voz con Alexa, negro",
+        "images": [
+            "https://coolboxpe.vtexassets.com/arquivos/ids/211688-1200-auto?v=637878765738570000&width=1200&height=auto&aspect=true",
+            "https://coolboxpe.vtexassets.com/arquivos/ids/211689-1200-auto?v=637878765842230000&width=1200&height=auto&aspect=true",
+            "https://coolboxpe.vtexassets.com/arquivos/ids/211691-1200-auto?v=637878766090930000&width=1200&height=auto&aspect=true"
+        ],
+        "marca": "AMAZON",
+        "precio": 259.90,
+        "categoria": "Parlantes Inteligentes",
+        "relacionados": [
+            1,
+            2
+        ],
+        "detalle": "Organiza cada paso de tu día con el altavoz inteligente Amazon Echo Dot 4ta generación y Alexa. ¡Úsalo con tu voz!"
+    },
+    {
+        "id": 9,
+        "nombre": "Pantalla inteligente Amazon Echo Show 8 control de voz Alexa",
+        "images": [
+            "https://coolboxpe.vtexassets.com/arquivos/ids/193187-1200-auto?v=637707752014930000&width=1200&height=auto&aspect=true",
+            "https://coolboxpe.vtexassets.com/arquivos/ids/193190-1200-auto?v=637707752083970000&width=1200&height=auto&aspect=true",
+            "https://coolboxpe.vtexassets.com/arquivos/ids/193192-1200-auto?v=637707752129330000&width=1200&height=auto&aspect=true"
+        ],
+        "marca": "AMAZON",
+        "precio": 459.90,
+        "categoria": "Parlantes Inteligentes",
+        "relacionados": [
+            1,
+            2
+        ],
+        "detalle": "Modernidad y elegancia para tu hogar con la pantalla inteligente Amazon Echo Show 8. Disfruta de imágenes de calidad, gracias a la resolución de 1280 x 800 px."
+    },
+    {
+        "id": 10,
+        "nombre": "Pantalla inteligente HD Echo Show 10 3ra generación, con movimiento y Alexa, blanco",
+        "images": [
+            "https://coolboxpe.vtexassets.com/arquivos/ids/193099-1200-auto?v=637705151950030000&width=1200&height=auto&aspect=true",
+            "https://coolboxpe.vtexassets.com/arquivos/ids/193100-1200-auto?v=637705151972230000&width=1200&height=auto&aspect=true",
+            "https://coolboxpe.vtexassets.com/arquivos/ids/193309-1200-auto?v=637709586220100000&width=1200&height=auto&aspect=true"
+        ],
+        "marca": "AMAZON",
+        "precio": 1699.90,
+        "categoria": "Parlantes Inteligentes",
+        "relacionados": [
+            1,
+            2
+        ],
+        "detalle": "La pantalla inteligente HD Echo Show 10 brindará modernidad y elegancia a tu hogar, podrás utilizarlo en la cocina, escritorio o la habitación que prefieras."
+    },
+    {
+        "id": 11,
+        "nombre": "Altavoz inteligente Amazon Echo Dot 4ta generación con reloj, control de voz con Alexa, blanco",
+        "images": [
+            "https://coolboxpe.vtexassets.com/arquivos/ids/189241-1200-auto?v=637650083934600000&width=1200&height=auto&aspect=true",
+            "https://coolboxpe.vtexassets.com/arquivos/ids/189243-1200-auto?v=637650085516670000&width=1200&height=auto&aspect=true",
+            "https://coolboxpe.vtexassets.com/arquivos/ids/211410-1200-auto?v=637877076287400000&width=1200&height=auto&aspect=true"
+        ],
+        "marca": "AMAZON",
+        "precio": 299.90,
+        "categoria": "Parlantes Inteligentes",
+        "relacionados": [
+            1,
+            2
+        ],
+        "detalle": "Organiza cada paso de tu día con el altavoz inteligente Amazon Echo Dot 4ta generación y Alexa. ¡Úsalo con tu voz!"
     }
 ]
