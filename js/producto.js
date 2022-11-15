@@ -24,7 +24,8 @@ document.addEventListener("DOMContentLoaded", function() {
 // Carga datos del producto
 
 async function loadProducto() {
-    let producto = await productoDAO.fectchById(id);
+    await productoDAO.fetchAll();
+    let producto = productoDAO.localFetchById(id);
 
     if(favoritoDAO.isFavorite(id)) {
         document.getElementById("opciones").innerHTML += "Es favorito";
@@ -40,6 +41,10 @@ async function loadProducto() {
     document.getElementById("opciones").innerHTML += `
     <button id="agregar-carrito" data-producto-id="${producto.id}">Agregar al carrito</button>
     `;
+    for(let relacionadoId of producto.relacionados) {
+        let productoRelacionado = productoDAO.localFetchById(relacionadoId);
+        document.getElementById("relacionados").innerHTML += `<a href="producto.html?id=${relacionadoId}">${productoRelacionado.nombre}</a><br>`;
+    }
 }
 
 // Carga reviews
