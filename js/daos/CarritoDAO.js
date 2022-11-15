@@ -23,4 +23,8 @@ export class CarritoDAO extends LocalStorageDAO {
             this.save();
         }
     }
+
+    getCantidad() {
+        return this.items.length || 0;
+    }
 }
