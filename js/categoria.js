@@ -9,9 +9,16 @@ document.addEventListener("DOMContentLoaded", function() {
 async function loadListaDeProductos() {
     let queryStrings = new URLSearchParams(window.location.search);
     const categoria = queryStrings.get("cat");
-    let productos = await productoDAO.fetchByCategoria(categoria);
+    
+    let productos = null;
+
+    if (categoria != null) {
+        productos = await productoDAO.fetchByCategoria(categoria);
+    } else {
+        productos = await productoDAO.fetchAll();
+    }
 
     for(let producto of productos) {
-        document.getElementById("lista-productos").innerHTML += producto.getHTML();
+        document.getElementById("lista-productos").innerHTML += `${producto.getCardHTML()}<br>`;
     }
 }

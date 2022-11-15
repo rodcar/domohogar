@@ -1,6 +1,7 @@
 export class Producto {
     
-    constructor(precio, nombre, stock, detalles) {
+    constructor(id, precio, nombre, stock, detalles) {
+        this.id = id;
         this.precio = precio;
         this.nombre = nombre;
         this.stock = stock;
@@ -9,5 +10,13 @@ export class Producto {
     
     getHTML() {
         return `${this.nombre} | ${this.precio}`;
+    }
+
+    getCardHTML() {
+        return `
+            <a href="producto.html?id=${this.id}">
+                ${this.nombre}
+            </a>
+        `;
     }
 }
