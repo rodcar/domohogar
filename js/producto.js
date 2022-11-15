@@ -1,7 +1,6 @@
 import { CarritoDAO } from "./daos/CarritoDAO.js";
 import { FavoritoDAO } from "./daos/FavoritoDAO.js";
 import { ProductoDAO } from "./daos/ProductoDAO.js";
-import { CarritoItem } from "./entidades/CarritoItem.js";
 import { FavoritoItem } from "./entidades/FavoritoItem.js";
 
 let favoritoDAO = new FavoritoDAO();
