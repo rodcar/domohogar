@@ -16,10 +16,12 @@ export class CarritoDAO extends LocalStorageDAO {
         this.save();
     }
 
-    removeItem(id) {
+    reduceItem(id) {
         if (this.existsByItemId(id)) {
             let index = this.items.findIndex(item => item.id == id);
-            this.items[index].cantidad -= 1;
+            if (this.items[index].cantidad > 1) {
+                this.items[index].cantidad -= 1;
+            }
             this.save();
         }
     }

@@ -4,9 +4,9 @@ export class CarritoItem {
         this.cantidad = cantidad;
     }
 
-    getHTML() {
+    getHTML(producto) {
         return `
-            ${this.id} | ${this.cantidad}
+            ${producto.id} | ${producto.nombre} | ${producto.precio} | ${this.cantidad}
         `;
     }
 }

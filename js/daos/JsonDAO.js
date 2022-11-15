@@ -1,4 +1,4 @@
-export class JsonDAO {
+ {}export class JsonDAO {
     constructor(source, type) {
         this.items = [];
         this.source = source;
@@ -18,6 +18,12 @@ export class JsonDAO {
 
     async fectchById(id) {
         let items = await this.fetchAll();
+        return items.filter(function(item) {
+            return item.id == id;
+        })[0] || [];
+    }
+
+    localFetchById(id) {
         return this.items.filter(function(item) {
             return item.id == id;
         })[0] || [];
