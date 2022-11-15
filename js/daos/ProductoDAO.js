@@ -9,7 +9,7 @@ export class ProductoDAO extends JsonDAO{
     async fetchByCategoria(categoria) {
         let productos = await this.fetchAll();
         return productos.filter(function(item) {
-            return item.categoria == categoria;
+            return item.categoria.toUpperCase() == categoria.toUpperCase();
         });
     }
 }
