@@ -216,5 +216,95 @@
         ],
         "detalle": "Organiza cada paso de tu día con el altavoz inteligente Amazon Echo Dot 4ta generación y Alexa. ¡Úsalo con tu voz!",
         "stock": 10
+    },
+    {
+        "id": 12,
+        "nombre": "Amplificador de señal Mi Wifi AC1200",
+        "images": [
+            "https://sodimac.scene7.com/is/image/SodimacPeru/4067843_01?fmt=jpg&fit=fit,1&wid=800&hei=800",
+            "https://sodimac.scene7.com/is/image/SodimacPeru/4067843_03?fmt=jpg&fit=fit,1&wid=800&hei=800",
+            "https://sodimac.scene7.com/is/image/SodimacPeru/4067843_04?fmt=jpg&fit=fit,1&wid=800&hei=800"
+        ],
+        "marca": "XIAOMI",
+        "precio": 109,
+        "categoria": "WIFI",
+        "relacionados": [1, 2],
+        "detalle": "Modelo: RA75. Ram: 64mb. Estándares: IEEE 802.11ac / n / a 5 GHz, IEEE 802.11n / b / g 2.4 Ghz. Velocidades de WiFi: 5 GHz: 867 Mbps (802.11ac, 2 * 2 @ 80MHz) 2.4 GHz: 300 Mbs (802.11n, 2 * 2 @ 40MH). Modos: Modo extensor de rango Modo de punto de acceso. Seguridad inalámbrica: WPA-PSK / WPA2-P..",
+        "stock": 10
+    },
+    {
+        "id": 13,
+        "nombre": "Mesh AC1200Mbps 2 Nodes Vektor2400-AC",
+        "images": [
+            "https://sodimac.scene7.com/is/image/SodimacPeru/4030036_01?fmt=jpg&fit=fit,1&wid=800&hei=800",
+            "https://sodimac.scene7.com/is/image/SodimacPeru/4030036_21?fmt=jpg&fit=fit,1&wid=800&hei=800",
+            "https://sodimac.scene7.com/is/image/SodimacPeru/4030036_02?fmt=jpg&fit=fit,1&wid=800&hei=800"
+        ],
+        "marca": "Nexxt Conectividad",
+        "precio": 259,
+        "categoria": "WIFI",
+        "relacionados": [1, 2],
+        "detalle": "Esta solución ofrece 112m2 extra de transmisión de la señal con la integración de cada nodo, lo cual se traduce en un alcance mucho mayor al de un router convencional.",
+        "stock": 10
+    },
+    {
+        "id": 14,
+        "nombre": "Amplificador de Cobertura Wi-Fi Mesh Deco M4 3-Pack",
+        "images": [
+            "https://sodimac.scene7.com/is/image/SodimacPeru/4018788_1?fmt=jpg&fit=fit,1&wid=800&hei=800",
+            "https://sodimac.scene7.com/is/image/SodimacPeru/4018788_3?fmt=jpg&fit=fit,1&wid=800&hei=800",
+            "https://sodimac.scene7.com/is/image/SodimacPeru/4018788_4?fmt=jpg&fit=fit,1&wid=800&hei=800"
+        ],
+        "marca": "Nexxt Conectividad",
+        "precio": 729.90,
+        "categoria": "WIFI",
+        "relacionados": [1, 2],
+        "detalle": "Deco usa un sistema de unidades para lograr una cobertura Wi-Fi perfecta para el hogar ? ¡Elimina las zonas de baja señal de una vez por todas! Con la avanzada tecnología Deco Mesh, los dispositivos Deco trabajan juntos para formar una red unificada en tu hogar, con el mismo nombre de red. Los dispositivos cambian automáticamente entre Decos a medida que te desplazas por tu hogar para obtener las velocidades más rápidas posibles.",
+        "stock": 10
+    },
+    {
+        "id": 15,
+        "nombre": "Extensor de Rango WiFi 300 Mbps MW300RE",
+        "images": [
+            "https://sodimac.scene7.com/is/image/SodimacPeru/3506940_01?fmt=jpg&fit=fit,1&wid=800&hei=800",
+            "https://sodimac.scene7.com/is/image/SodimacPeru/3506940_12?fmt=jpg&fit=fit,1&wid=800&hei=800",
+            "https://sodimac.scene7.com/is/image/SodimacPeru/3506940_17?fmt=jpg&fit=fit,1&wid=800&hei=800"
+        ],
+        "marca": "Mercusys",
+        "precio": 79,
+        "categoria": "WIFI",
+        "relacionados": [1, 2],
+        "detalle": "Ideal para ampliar una red inalámbrica de alta velocidad escalable o para conectar múltiples dispositivos.",
+        "stock": 10
+    },
+    {
+        "id": 16,
+        "nombre": "Extensor Powerline WiFi AV600 300 Mbps TL-WPA4220",
+        "images": [
+            "https://sodimac.scene7.com/is/image/SodimacPeru/2581876_01?fmt=jpg&fit=fit,1&wid=800&hei=800",
+            "https://sodimac.scene7.com/is/image/SodimacPeru/2581876_21?fmt=jpg&fit=fit,1&wid=800&hei=800",
+            "https://sodimac.scene7.com/is/image/SodimacPeru/2581876_31?fmt=jpg&fit=fit,1&wid=800&hei=800"
+        ],
+        "marca": "TP-LINK",
+        "precio": 179,
+        "categoria": "WIFI",
+        "relacionados": [1, 2],
+        "detalle": "Dimensiones: 9.4 x 5.4 x 4 cm, El TL-WPA4220 transforma el circuito eléctrico existente de su hogar en una red de alta velocidad sin necesidad de cables nuevos o perforación., Tipo: Extensor de cobertura, Velocidad: 300Mbps",
+        "stock": 10
+    },
+    {
+        "id": 17,
+        "nombre": "Adaptador Inalámbrico USB 150 m",
+        "images": [
+            "https://sodimac.scene7.com/is/image/SodimacPeru/2267152_01?fmt=jpg&fit=fit,1&wid=800&hei=800",
+            "https://sodimac.scene7.com/is/image/SodimacPeru/2267152_12?fmt=jpg&fit=fit,1&wid=800&hei=800",
+            "https://sodimac.scene7.com/is/image/SodimacPeru/2267152_13?fmt=jpg&fit=fit,1&wid=800&hei=800"
+        ],
+        "marca": "TP-LINK",
+        "precio": 59,
+        "categoria": "WIFI",
+        "relacionados": [1, 2],
+        "detalle": "Completamente probado para trabajar con el Raspberry Pi 2 y Raspberry Pi Modelo B +. La tecnología MIMO hace tarifas de transmisión inalámbrica de hasta 150Mbps. La tecnología del CCA realza su stablility señal automáticamente evitando conflictos de canal. Quick Secure Setup, cumple con WPS para la seguridad inalámbrica sin problemas. Encriptación de seguridad inalámbrica fácilmente en un empuje del botón de QSS.",
+        "stock": 10
     }
 ]
