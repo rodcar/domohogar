@@ -5,7 +5,7 @@
         "precio": 1000,
         "categoria": "Focos",
         "relacionados": [1, 2],
-        "detalles": "Es un foco inteligente",
+        "detalle": "Es un foco inteligente",
         "watts": 30
     },
     {
@@ -13,7 +13,7 @@
         "nombre": "Alexa",
         "precio": 120,
         "categoria": "Parlantes",
-        "relacionados": [2]
+        "relacionados": [2, 0]
     },
     {
         "id": 2,
