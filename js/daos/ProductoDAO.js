@@ -16,7 +16,7 @@ export class ProductoDAO extends JsonDAO{
     async buscar(q) {
         let productos = await this.fetchAll();
         return productos.filter(function(item) {
-            return item.categoria.toLowerCase().includes(q) || item.nombre.toLowerCase().includes(q);
+            return item.categoria.toLowerCase().includes(q) || item.nombre.toLowerCase().includes(q) || item.marca.toLowerCase().includes(q);
         });
     }
 }
