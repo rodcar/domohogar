@@ -12,7 +12,7 @@ export class Producto {
     getHTML() {
         return `
             <img src="${this.images[0]}" width="300" heigth="300">
-            ${this.nombre} | ${this.precio}
+            ${this.nombre} | ${this.precio} | Stock: ${this.stock}
         `;
     }
 
