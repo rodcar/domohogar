@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "codigo": "PERU2022000001",
+        "comprador": "Ivan Yang Rodriguez Carranza",
+        "carrito": [
+            {
+                "id": 1,
+                "cantidad": 2,
+                "precio": 120
+            },
+            {
+                "id": 0,
+                "cantidad": 1,
+                "precio": 60
+            }
+        ],
+        "descuento": "PROMOENTREGA",
+        "subtotal": 300,
+        "entrega": 0,
+        "total": 300,
+        "estado": "Listo para enviar",
+        "nota": "El paquete será enviado el día 16/11/2022 a las 10:00 AM."
+    },
+    {
+        "id": 2,
+        "codigo": "PERU2022000002",
+        "comprador": "Miguel Carranza",
+        "carrito": [
+            {
+                "id": 1,
+                "cantidad": 1,
+                "precio": 120
+            }
+        ],
+        "descuento": "PROMOENTREGA",
+        "subtotal": 120,
+        "entrega": 0,
+        "total": 120,
+        "estado": "Recibido",
+        "nota": "El paquete se recibió el día 14/11/2022 a las 2:00 PM."
+    }
+]
