@@ -1,10 +1,14 @@
-[{
-    "id": 0,
-   "nombre": "foco",
-   "precio": 1000 
-},
-{
-    "id": 1,
-    "nombre": "Alexa",
-    "precio": 120 
-}]
+[
+    {
+        "id": 0,
+        "nombre": "foco",
+        "precio": 1000,
+        "categoria": "Focos"
+    },
+    {
+        "id": 1,
+        "nombre": "Alexa",
+        "precio": 120,
+        "categoria": "Parlantes"
+    }
+]
