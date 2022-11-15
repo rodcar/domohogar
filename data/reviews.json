@@ -1,0 +1,23 @@
+[
+    {
+        "productoId": 1,
+        "nombre": "Ivan Rodriguez",
+        "puntos": 4,
+        "comentario": "Buen producto.",
+        "fecha": "15/11/2020"
+    },
+    {
+        "productoId": 0,
+        "nombre": "Ivan Rodriguez",
+        "puntos": 5,
+        "comentario": "Muy bueno.",
+        "fecha": "15/11/2020"
+    },
+    {
+        "productoId": 0,
+        "nombre": "Juan Rodriguez",
+        "puntos": 3,
+        "comentario": "Regular.",
+        "fecha": "15/11/2020"
+    }
+]
