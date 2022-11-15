@@ -1,12 +1,17 @@
 [
     {
         "id": 0,
-        "nombre": "foco",
-        "precio": 1000,
+        "nombre": "Focos led inteligente Nexxt NHB-C1203",
+        "images": [
+            "https://coolboxpe.vtexassets.com/arquivos/ids/180863-800-auto?v=637496254402200000&width=800&height=auto&aspect=true",
+            "https://coolboxpe.vtexassets.com/arquivos/ids/180864-800-auto?v=637496254489170000&width=800&height=auto&aspect=true",
+            "https://coolboxpe.vtexassets.com/arquivos/ids/180865-800-auto?v=637496254601030000&width=800&height=auto&aspect=true"
+        ],
+        "marca": "NEXXT",
+        "precio": 109.9,
         "categoria": "Focos",
         "relacionados": [1, 2],
-        "detalle": "Es un foco inteligente",
-        "watts": 30
+        "detalle": "Los focos inteligentes Nexxt A19 puede emparejarse fácilmente a través de la aplicación Nexxt Home. Actívala por voz, mediante Amazon o Google Assistant."
     },
     {
         "id": 1,
