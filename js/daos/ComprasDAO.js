@@ -10,6 +10,6 @@ export class ComprasDAO extends JsonDAO{
         let compras = await this.fetchAll();
         return compras.filter(function(compra) {
             return compra.codigo == codigo;
-        });
+        })[0];
     }
 }

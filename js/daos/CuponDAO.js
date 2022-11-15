@@ -10,6 +10,6 @@ export class CuponDAO extends JsonDAO{
         let cupones = await this.fetchAll();
         return cupones.filter(function(cupon) {
             return cupon.codigo == codigo;
-        });
+        })[0];
     }
 }
