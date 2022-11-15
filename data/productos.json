@@ -4,7 +4,9 @@
         "nombre": "foco",
         "precio": 1000,
         "categoria": "Focos",
-        "relacionados": [1, 2]
+        "relacionados": [1, 2],
+        "detalles": "Es un foco inteligente",
+        "watts": 30
     },
     {
         "id": 1,
