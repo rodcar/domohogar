@@ -50,6 +50,8 @@ async function loadProducto() {
     await productoDAO.fetchAll();
     producto = productoDAO.localFetchById(id);
 
+    document.title = `DomoHogar - ${producto.nombre}`;
+
     // muestra informacion del producto
     document.getElementById("opciones").innerHTML += producto.getHTML();
 
