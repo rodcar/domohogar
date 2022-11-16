@@ -3,32 +3,29 @@ import { ProductoDAO } from "./daos/ProductoDAO.js";
 
 let carritoDAO = new CarritoDAO();
 let productoDAO = new ProductoDAO();
-let subtotal = 0;
-let total = 0;
+let entrega = 15;
 
 document.addEventListener("DOMContentLoaded", function() {
-    productoDAO.fetchAll().then(() => {
-        loadListaDeProductos();
-    });
+    if (carritoDAO.items.length == 0) { return; } else {
+        productoDAO.fetchAll().then(() => {
+            loadListaDeProductos();
+        });
+    }
 });
 
 // Carga de productos
 
 function loadListaDeProductos() {
-    subtotal = 0;
-    document.getElementById("carrito-cantidad").innerHTML = `Tienes ${carritoDAO.getCantidad()} productos en el carrito.`;
-    document.getElementById("lista-productos").innerHTML = "";
+    let subtotal = 0;
+    let shoppingCartList = document.getElementById("list-products");
+    let html = "";
     for(let item of carritoDAO.items) {
         let producto = productoDAO.localFetchById(item.id);
+        console.log(producto.precio * item.cantidad);
         subtotal += producto.precio * item.cantidad;
-        document.getElementById("lista-productos").innerHTML += `${item.getHTML(producto)}`;
-        document.getElementById("lista-productos").innerHTML += `
-        <button class="reducir-carrito" data-producto-id="${producto.id}">-</button>
-        <button class="aumentar-carrito" data-producto-id="${producto.id}">+</button>
-        <button class="eliminar-carrito" data-producto-id="${producto.id}">Eliminar</button>
-        <br>
-        `;
+        html += item.getHTML(producto);
     }
+    shoppingCartList.innerHTML = html;
 
     let reduceButtons = document.getElementsByClassName("reducir-carrito");
     let aumentarButtons = document.getElementsByClassName("aumentar-carrito");
@@ -41,7 +38,9 @@ function loadListaDeProductos() {
     }
 
     // datos del pago
-    document.getElementById("subtotal").innerHTML = `S/.${subtotal}`;
+    document.getElementById("subtotal").innerHTML = `S/.${subtotal.toFixed(2)}`;
+    document.getElementById("total").innerHTML = `S/.${(subtotal + entrega).toFixed(2)}`;
+    document.getElementById("item-count").innerHTML = carritoDAO.items.length;
 }
 
 // Eventos
