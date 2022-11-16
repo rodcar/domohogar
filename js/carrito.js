@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let pagoTarjetaButton = document.getElementById("opcion-pago-tarjeta");
     pagoTarjetaButton.onclick = () => {
         if(isFormValid()) {
-
+            openNiubiz();
         }
     };
 });
@@ -158,4 +158,9 @@ function isFormValid() {
     }
 
     return true;
+}
+
+function openNiubiz() {
+    const myModal = new bootstrap.Modal(document.getElementById('niubiz'), {});
+    myModal.show();
 }

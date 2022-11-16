@@ -10,9 +10,14 @@ let favoritoDAO = new FavoritoDAO();
 let productoDAO = new ProductoDAO();
 let carritoDAO = new CarritoDAO();
 let reviewDAO = new ReviewDAO();
+let producto = null;
 
 document.addEventListener("DOMContentLoaded", function() {
     loadProducto().then(()=> {
+        //muestra información
+        cargarImagenes();
+        cargarInformacion();
+        // eventos
         document.getElementById("agregar-favoritos").onclick = (e) => agregarFavoritos(e);
         document.getElementById("eliminar-favoritos").onclick = (e) => eliminarFavoritos(e);
         document.getElementById("agregar-carrito").onclick = (e) => agregarCarrito(e);
@@ -23,9 +28,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Carga datos del producto
 
+function cargarImagenes() {
+    let mini1 = document.getElementById("mini-1");
+    let mini2 = document.getElementById("mini-2");
+    let mini3 = document.getElementById("mini-3");
+    mini1.src = producto.images[0];
+    mini2.src = producto.images[1];
+    mini3.src = producto.images[2];
+}
+
+function cargarInformacion() {
+    let productoNombre = document.getElementById("producto-nombre");
+    let productoPrecio = document.getElementById("producto-precio");
+    let productoDescripcion = document.getElementById("producto-descripcion");
+    let productoStock = document.getElementById("producto-stock");
+    productoNombre.innerHTML = producto.nombre;
+    productoPrecio.innerHTML = producto.precio.toFixed(2);
+}
+
 async function loadProducto() {
     await productoDAO.fetchAll();
-    let producto = productoDAO.localFetchById(id);
+    producto = productoDAO.localFetchById(id);
 
     // muestra informacion del producto
     document.getElementById("opciones").innerHTML += producto.getHTML();
