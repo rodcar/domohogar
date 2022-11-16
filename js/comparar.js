@@ -33,7 +33,7 @@ async function loadProducto() {
     let size2 = Object.keys(producto2).length;
     let p = (size >= size2) ? producto1 : producto2;
     for (var key in p) {
-        if (p.hasOwnProperty(key) && !["relacionados", "id", "stock", "precio"].includes(key)) {
+        if (p.hasOwnProperty(key) && !["relacionados", "id", "stock", "precio", "images", "nombre"].includes(key)) {
             comparacionDiv.innerHTML += `${key}: ${producto1[key] || "-"} || ${producto2[key] || "-"}<br>`;
         }
     }
