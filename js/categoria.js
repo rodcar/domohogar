@@ -17,6 +17,7 @@ async function loadListaDeProductos() {
     if (categoria != null) {
         let tituloDiv = document.getElementById("titulo");
         tituloDiv.innerHTML = categoria;
+        document.title = `DomoHogar - ${categoria}`;
         productos = await productoDAO.fetchByCategoria(categoria);
     } else {
         productos = await productoDAO.fetchAll();
