@@ -14,7 +14,7 @@
 
         <div class="row">
             <div class="col-2">
-                <label for="ordenar" class="form-label">Ordenar</label>
+                <label for="ordenar" class="form-label fw-bold">Ordenar</label>
                 <select id="ordenar" class="form-select mb-3">
                     <option value="nuevo">Nuevo</option>
                     <option value="menor">Precio de menor a mayor</option>
@@ -23,16 +23,46 @@
                     <option value="marca">Marca</option>
                 </select>
                 <div id="filtros">
-                    <label for="marca" class="form-label">Marca</label>
+                    <label for="marca" class="form-label fw-bold">Marca</label>
                     <div id="marca"></div>
-                    <label for="precio" class="form-label">Precio</label>
+                    <label for="precio" class="form-label fw-bold">Precio</label>
                     <div id="precio">
-                        <input type="checkbox" id="filtro-precio-1" class="filtro-precio" value="1">S/  0 - S/ 100<br>      
-                        <input type="checkbox" id="filtro-precio-2" class="filtro-precio" value="2">S/  100 - S/ 200<br>      
-                        <input type="checkbox" id="filtro-precio-3" class="filtro-precio" value="3">S/  200 - S/ 300<br>
-                        <input type="checkbox" id="filtro-precio-4" class="filtro-precio" value="4">S/  400 - S/ 500<br>
-                        <input type="checkbox" id="filtro-precio-5" class="filtro-precio" value="5">S/  500 - S/ 600<br>
-                        <input type="checkbox" id="filtro-precio-6" class="filtro-precio" value="6">S/ 600 a más<br>
+                        <div class="form-check">
+                            <input class="filtro-precio form-check-input" type="checkbox" value="" id="filtro-precio-1">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                S/  0 - S/ 100
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="filtro-precio form-check-input" type="checkbox" value="" id="filtro-precio-2">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                S/  100 - S/ 200
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="filtro-precio form-check-input" type="checkbox" value="" id="filtro-precio-3">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                S/  200 - S/ 300
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="filtro-precio form-check-input" type="checkbox" value="" id="filtro-precio-4">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                S/  400 - S/ 500
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="filtro-precio form-check-input" type="checkbox" value="" id="filtro-precio-5">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                S/  500 - S/ 600
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="filtro-precio form-check-input" type="checkbox" value="" id="filtro-precio-6">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                S/ 600 a más
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>

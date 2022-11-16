@@ -31,7 +31,13 @@ async function loadListaDeProductos() {
 
     let filtroMarcaDiv = document.getElementById("marca");
     for(let marca of marcas) {
-        filtroMarcaDiv.innerHTML += `<input type="checkbox" class="filtro-marca" value="${marca}">${marca}<br> `;
+        //filtroMarcaDiv.innerHTML += `<input type="checkbox" class="filtro-marca" value="${marca}">${marca}<br> `;
+        filtroMarcaDiv.innerHTML += `
+        <div class="form-check">
+        <input class="filtro-marca form-check-input" type="checkbox" value="${marca}">
+        <label class="form-check-label" for="flexCheckDefault">${marca}</label>
+        </div>
+    `;
     }
 
     // carga los checkboxes de filtro
