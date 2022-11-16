@@ -14,7 +14,22 @@ export class Compra {
 
     getHTML() {
         return `
-            ${this.codigo} | ${this.comprador} |${this.total}
+        <table class="table table-hover">
+            <tbody>
+                <tr>
+                <th scope="row">Comprador</th>
+                <td>${this.comprador}</td>
+                </tr>
+                <tr>
+                <th scope="row">Estado</th>
+                <td>${this.estado}</td>
+                </tr>
+                <tr>
+                <th scope="row">Nota</th>
+                <td>${this.nota}</td>
+                </tr>
+            </tbody>
+        </table>
         `;
     }
 }
