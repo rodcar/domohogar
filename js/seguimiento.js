@@ -13,7 +13,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 async function buscarCompra(codigo) {
     let compra = await comprasDao.findByCodigo(codigo);
-    console.log(codigo);
-    console.log(compra);
-    document.getElementById("info").innerHTML = compra.getHTML();
+    if (compra !== undefined) {
+        document.getElementById("info").innerHTML = compra.getHTML();
+    } else {
+        document.getElementById("info").innerHTML = "No se ha encontrado una compra.";
+    }
 }
