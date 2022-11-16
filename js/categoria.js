@@ -49,6 +49,13 @@ async function loadListaDeProductos() {
         };
     }
 
+    let filtroPrecioCheckbox = document.getElementsByClassName("filtro-precio");
+    for(let filtro2 of filtroPrecioCheckbox) {
+        filtro2.onchange = () => {
+            aplicarFiltroYOrden();
+        };
+    }
+
     // carga la opción de ordenamiento
     let ordenarSelect = document.getElementById("ordenar");
     ordenarSelect.onchange = () => {
@@ -65,8 +72,42 @@ function mostrarProductos(productos) {
 }
 
 function aplicarFiltroYOrden() {
-    let productosFiltrados = productos;
-    // filtra
+    let productosFiltrados = [];
+    
+    //filtra precios
+    let filtroPrecio1 = document.getElementById("filtro-precio-1").checked;
+    let filtroPrecio2 = document.getElementById("filtro-precio-2").checked;
+    let filtroPrecio3 = document.getElementById("filtro-precio-3").checked;
+    let filtroPrecio4 = document.getElementById("filtro-precio-4").checked;
+    let filtroPrecio5 = document.getElementById("filtro-precio-5").checked;
+    let filtroPrecio6 = document.getElementById("filtro-precio-6").checked;
+
+    if(filtroPrecio1 || filtroPrecio2 || filtroPrecio3 || filtroPrecio4 || filtroPrecio5 || filtroPrecio6){
+        for(let p of productos) {
+            if(filtroPrecio1 && (p.precio < 100)) {
+                productosFiltrados.push(p);
+            }
+            if(filtroPrecio2 && (p.precio >= 100 && p.precio < 200)) {
+                productosFiltrados.push(p);
+            }
+            if(filtroPrecio3 && (p.precio >= 200 && p.precio < 300)) {
+                productosFiltrados.push(p);
+            }
+            if(filtroPrecio4 && (p.precio >= 300 && p.precio < 400)) {
+                productosFiltrados.push(p);
+            }
+            if(filtroPrecio5 && (p.precio >= 400 && p.precio < 500)) {
+                productosFiltrados.push(p);
+            }
+            if(filtroPrecio6 && (p.precio >= 600)) {
+                productosFiltrados.push(p);
+            }                      
+        }
+    } else {
+        productosFiltrados = productos;
+    }
+        
+    // filtra marcas
     if(filtroMarcas.length > 0) {
         productosFiltrados = productosFiltrados.filter(function(p) {
             return filtroMarcas.includes(p.marca);
