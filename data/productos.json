@@ -306,5 +306,99 @@
         "relacionados": [1, 2],
         "detalle": "Completamente probado para trabajar con el Raspberry Pi 2 y Raspberry Pi Modelo B +. La tecnología MIMO hace tarifas de transmisión inalámbrica de hasta 150Mbps. La tecnología del CCA realza su stablility señal automáticamente evitando conflictos de canal. Quick Secure Setup, cumple con WPS para la seguridad inalámbrica sin problemas. Encriptación de seguridad inalámbrica fácilmente en un empuje del botón de QSS.",
         "stock": 10
-    }
+    },
+    {
+        "id": 18,
+        "nombre": "CERRADURA SMART CON TARJETA UNICOR ARES COLOR CROMO/NEGRO",
+        "images": [
+            "https://ripleype.imgix.net/https%3A%2F%2Fdpq25p1ucac70.cloudfront.net%2Fseller-place-files%2Fmrkl-files%2F1380%2FELECTROHOGAR%2FFOTOS-RIPLEY-05-01.jpg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=fd24e96829e5ec0dc8e6535ef396ba4e",
+            "https://ripleype.imgix.net/https%3A%2F%2Fdpq25p1ucac70.cloudfront.net%2Fseller-place-files%2Fmrkl-files%2F1380%2FELECTROHOGAR%2FFOTOS-RIPLEY-05-02.jpg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=cb64a3ed5be585b358cb943a163b0637",
+            "https://ripleype.imgix.net/https%3A%2F%2Fdpq25p1ucac70.cloudfront.net%2Fseller-place-files%2Fmrkl-files%2F1380%2FELECTROHOGAR%2FFOTOS-RIPLEY-05-03.jpg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=cb184892ee0b5929ca4cbb3703ec615f"
+        ],
+        "marca": "UNICOR",
+        "precio": 1199,
+        "categoria": "Seguridad Smart",
+        "relacionados": [1, 2],
+        "detalle": "Las mejores cerraduras bluetooth, con sensor de huella dactilar, para mantener tu casa segura y elegante en Ripley Perú. ¡Compra aquí!",
+        "stock": 10
+        },
+    
+        {
+            "id": 19,
+            "nombre": "XIAOMI CAMARA MI SECURITY HOME 360° 1080P",
+            "images": [
+                "https://ripleype.imgix.net/https%3A%2F%2Fdpq25p1ucac70.cloudfront.net%2Fseller-place-files%2Fmrkl-files%2F1225%2FELECTROHOGAR%2FCamara-1-c_000016670761_8.jpeg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=3d1b7c8ba65edd8bb3771f9bc4c882af",
+                "https://ripleype.imgix.net/https%3A%2F%2Fdpq25p1ucac70.cloudfront.net%2Fseller-place-files%2Fmrkl-files%2F1225%2FELECTROHOGAR%2FCamara-3-c_000035655557_10.jpeg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=5068e0d358e2dfdd02d4e1f50d918dc0",
+                "https://ripleype.imgix.net/https%3A%2F%2Fdpq25p1ucac70.cloudfront.net%2Fseller-place-files%2Fmrkl-files%2F1225%2FELECTROHOGAR%2FCamara-4-c_000036288162_11.jpeg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=8ffcd1944c561ee557be91f2bb3074a6"
+            ],
+            "marca": "Xiaomi",
+            "precio": 189.9,
+            "categoria": "Seguridad Smart",
+            "relacionados": [1, 2],
+            "detalle": " Visión nocturna por infrarrojos | Detección de movimientos por IA",
+            "stock": 10
+        },
+
+        {
+            "id": 20,
+            "nombre": "CÁMARA WIFI PARA SEGURIDAD DE EXTERIORES TP-LINK TAPO C310",
+            "images": [
+                "https://ripleype.imgix.net/https%3A%2F%2Fdpq25p1ucac70.cloudfront.net%2Fseller-place-files%2Fmrkl-files%2F604%2FSALUD%2FWhatsApp-Image-2022-06-23-at-2_084658957320_8.jpeg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=dbbad040b996a1fb5f4a62eaddfce283",
+                "https://hiraoka.com.pe/media/catalog/product/cache/a357cb11a228eb6f7f15c0ee1ff203af/1/_/1_normal_1599194402144s.jpg",
+                "https://hiraoka.com.pe/media/catalog/product/cache/a357cb11a228eb6f7f15c0ee1ff203af/4/_/4_normal_1599194441148o.jpg"
+            ],
+            "marca": "TAPO",
+            "precio": 385,
+            "categoria": "Seguridad Smart",
+            "relacionados": [1, 2],
+            "detalle": " Con 3MP de alta resolución, la TP-Link Tapo C310 ofrece imágenes vívidas que ayudan a la identificación y el reconocimiento desde lejos. Detección de movimiento y notificaciones: Reciba notificaciones instantáneas y verifique las fuentes cuando se detecte movimiento",
+            "stock": 10
+        },
+
+        {
+            "id": 21,
+            "nombre": "CERRADURA SMART C002D PREMIUM FORMA PERILLA",
+            "images": [
+                "https://ripleype.imgix.net/https%3A%2F%2Fdpq25p1ucac70.cloudfront.net%2Fseller-place-files%2Fmrkl-files%2F990%2FMEJORAMIENTO%20DEL%20HOGAR%2FHcaf99dbf753e41d19a455019d3362557N_163943258643_1.jpeg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=8b7c6f0c02457c86274683256fde77bf",
+                "https://ripleype.imgix.net/https%3A%2F%2Fdpq25p1ucac70.cloudfront.net%2Fseller-place-files%2Fmrkl-files%2F990%2FMEJORAMIENTO%20DEL%20HOGAR%2FHd7147090bb9d48d4894fa3c260256ea8M_163947877665_3.jpeg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=037cb5997a3ab67ce0a149ac15fed5be",
+                "https://ripleype.imgix.net/https%3A%2F%2Fdpq25p1ucac70.cloudfront.net%2Fseller-place-files%2Fmrkl-files%2F990%2FMEJORAMIENTO%20DEL%20HOGAR%2FH02af855746aa4db0a7551a7d5afec7e0n_163947396668_3.jpeg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=65377ea17246c149d8fa8d3c6c6618f8"
+            ],
+            "marca": "C002D",
+            "precio": 929,
+            "categoria": "Seguridad Smart",
+            "relacionados": [1, 2],
+            "detalle": "Te traemos lo último en seguridad para tu hogar, la Cerradura Smart Modelo C002D con funciones sofisticadas de desbloqueo.",
+            "stock": 10
+        },
+
+        {
+            "id": 22,
+            "nombre": "CÁMARA DE SEGURIDAD BBCAM ISMART",
+            "images": [
+                "https://ripleype.imgix.net/https%3A%2F%2Fdpq25p1ucac70.cloudfront.net%2Fseller-place-files%2Fmrkl-files%2F824%2FMEJORAMIENTO%20DEL%20HOGAR%2FBBCAM_120223516510_3.jpeg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=9fcf7eaef4e29322f266f0580e566c63",
+                "https://ripleype.imgix.net/https%3A%2F%2Fdpq25p1ucac70.cloudfront.net%2Fseller-place-files%2Fmrkl-files%2F824%2FMEJORAMIENTO%20DEL%20HOGAR%2FBBCAM_120233060844_1.jpeg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=110c82cc7ef36ec583a3c590e71d4bcd"
+            ],
+            "marca": "ISMART",
+            "precio": 329,
+            "categoria": "Seguridad Smart",
+            "relacionados": [1, 2],
+            "detalle": "CAMARA DE SEGURIDAD CON CONEXIÓN WIF CON SONIDO BILATERAL, IMAGEN FULL HD. Visión: 360° . Visión nocturna: Hasta 10 metros. BOTON DE LLAMADA. MUSICA DE ARRULLO PARA BEBÉ. SENSOR DE MOVIMIENTO,SONIDO, TEMPERATURA Y HUMEDAD.",
+            "stock": 10
+        },
+
+        {
+            "id": 23,
+            "nombre": "CÁMARA IP LC1C FULL HD 1080P OUTDOOR IP65 2000 LÚMENES - BLANCO",
+            "images": [
+                "https://ripleype.imgix.net/https%3A%2F%2Fdpq25p1ucac70.cloudfront.net%2Fseller-place-files%2Fmrkl-files%2F1131%2FELECTROHOGAR%2FEZVIZ-LC1C-1080P-Blanco-6971744239404-01_213216933525_68.jpeg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=02795316ca63e279504b5b53bd3c0577",
+                "https://ripleype.imgix.net/https%3A%2F%2Fdpq25p1ucac70.cloudfront.net%2Fseller-place-files%2Fmrkl-files%2F1131%2FELECTROHOGAR%2FEZVIZ-LC1C-1080P-Blanco-6971744239404-02_213331710071_30.jpeg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=9ee764c47d098077a32d79a322f0a5c8",
+                "https://ripleype.imgix.net/https%3A%2F%2Fdpq25p1ucac70.cloudfront.net%2Fseller-place-files%2Fmrkl-files%2F1131%2FELECTROHOGAR%2FEZVIZ-LC1C-1080P-Blanco-6971744239404-03_213333111218_30.jpeg?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=8334b9d740dbdc153f0a6a7b32efaf3d"
+            ],
+            "marca": "EZVIZ",
+            "precio": 580,
+            "categoria": "Seguridad Smart",
+            "relacionados": [1, 2],
+            "detalle": "El EZVIZ LC1C es una cámara de seguridad y un reflector para exteriores en un paquete increíble, que satisface sus necesidades de seguridad e iluminación nocturna en el patio, la entrada y más",
+            "stock": 10
+        }
 ]
