@@ -93,65 +93,69 @@
                         <small>La entrega se realizará dentro de las 24 horas posterior a la compra.</small>
                         <form class="mt-3">
                             <div class="form-group mb-3">
+                                <label for="formGroupExampleInput">Nombre Completo</label>
+                                <input type="text" class="form-control" id="nombre-completo" placeholder="Ingrese su nombre completo">
+                            </div>
+                            <div class="form-group mb-3">
                               <label for="formGroupExampleInput">Celular</label>
-                              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su número celular">
+                              <input type="tel" class="form-control" id="celular" placeholder="Ingrese su número celular" maxlength="12">
                             </div>
                             <div class="form-group mb-3">
                                 <label for="formGroupExampleInput">Distrito</label>
-                                <select class="form-select" aria-label="Default select example">
+                                <select class="form-select" aria-label="Default select example" id="distrito">
                                     <option value="">Seleccionar</option>
-                                    <option value="">ANCON</option>
-                                    <option value="">ATE</option>
-                                    <option value="">BARRANCO</option>
-                                    <option value="">BREÑA</option>
-                                    <option value="">CARABAYLLO</option>
-                                    <option value="">CHACLACAYO</option>
-                                    <option value="">CHORRILLOS</option>
-                                    <option value="">CIENEGUILLA</option>
-                                    <option value="">COMAS</option>
-                                    <option value="">EL AGUSTINO</option>
-                                    <option value="">INDEPENDENCIA</option>
-                                    <option value="">JESUS MARIA</option>
-                                    <option value="">LA MOLINA</option>
-                                    <option value="">LA VICTORIA</option>
-                                    <option value="">LIMA</option>
-                                    <option value="">LINCE</option>
-                                    <option value="">LOS OLIVOS</option>
-                                    <option value="">LURIGANCHO</option>
-                                    <option value="">LURIN</option>
-                                    <option value="">MAGDALENA DEL MAR</option>
-                                    <option value="">MIRAFLORES</option>
-                                    <option value="">PACHACAMAC</option>
-                                    <option value="">PUCUSANA</option>
-                                    <option value="">PUEBLO LIBRE</option>
-                                    <option value="">PUENTE PIEDRA</option>
-                                    <option value="">PUNTA HERMOSA</option>
-                                    <option value="">PUNTA NEGRA</option>
-                                    <option value="">RIMAC</option>
-                                    <option value="">SAN BARTOLO</option>
-                                    <option value="">SAN BORJA</option>
-                                    <option value="">SAN ISIDRO</option>
-                                    <option value="">SAN JUAN DE LURIGANCHO</option>
-                                    <option value="">SAN JUAN DE MIRAFLORES</option>
-                                    <option value="">SAN LUIS</option>
-                                    <option value="">SAN MARTIN DE PORRES</option>
-                                    <option value="">SAN MIGUEL</option>
-                                    <option value="">SANTA ANITA</option>
-                                    <option value="">SANTA MARIA DEL MAR</option>
-                                    <option value="">SANTA ROSA</option>
-                                    <option value="">SANTIAGO DE SURCO</option>
-                                    <option value="">SURQUILLO</option>
-                                    <option value="">VILLA EL SALVADOR</option>
-                                    <option value="">VILLA MARIA DEL TRIUNFO</option>
+                                    <option value="1">ANCON</option>
+                                    <option value="1">ATE</option>
+                                    <option value="1">BARRANCO</option>
+                                    <option value="1">BREÑA</option>
+                                    <option value="1">CARABAYLLO</option>
+                                    <option value="1">CHACLACAYO</option>
+                                    <option value="1">CHORRILLOS</option>
+                                    <option value="1">CIENEGUILLA</option>
+                                    <option value="1">COMAS</option>
+                                    <option value="1">EL AGUSTINO</option>
+                                    <option value="1">INDEPENDENCIA</option>
+                                    <option value="1">JESUS MARIA</option>
+                                    <option value="1">LA MOLINA</option>
+                                    <option value="1">LA VICTORIA</option>
+                                    <option value="1">LIMA</option>
+                                    <option value="1">LINCE</option>
+                                    <option value="1">LOS OLIVOS</option>
+                                    <option value="1">LURIGANCHO</option>
+                                    <option value="1">LURIN</option>
+                                    <option value="1">MAGDALENA DEL MAR</option>
+                                    <option value="1">MIRAFLORES</option>
+                                    <option value="1">PACHACAMAC</option>
+                                    <option value="1">PUCUSANA</option>
+                                    <option value="1">PUEBLO LIBRE</option>
+                                    <option value="1">PUENTE PIEDRA</option>
+                                    <option value="1">PUNTA HERMOSA</option>
+                                    <option value="1">PUNTA NEGRA</option>
+                                    <option value="1">RIMAC</option>
+                                    <option value="1">SAN BARTOLO</option>
+                                    <option value="1">SAN BORJA</option>
+                                    <option value="1">SAN ISIDRO</option>
+                                    <option value="1">SAN JUAN DE LURIGANCHO</option>
+                                    <option value="1">SAN JUAN DE MIRAFLORES</option>
+                                    <option value="1">SAN LUIS</option>
+                                    <option value="1">SAN MARTIN DE PORRES</option>
+                                    <option value="1">SAN MIGUEL</option>
+                                    <option value="1">SANTA ANITA</option>
+                                    <option value="1">SANTA MARIA DEL MAR</option>
+                                    <option value="1">SANTA ROSA</option>
+                                    <option value="1">SANTIAGO DE SURCO</option>
+                                    <option value="1">SURQUILLO</option>
+                                    <option value="1">VILLA EL SALVADOR</option>
+                                    <option value="1">VILLA MARIA DEL TRIUNFO</option>
                                   </select>
                               </div>                            
                             <div class="form-group mb-3">
                               <label for="formGroupExampleInput2">Dirección</label>
-                              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese su dirección">
+                              <input type="text" class="form-control" id="direccion" placeholder="Ingrese su dirección">
                             </div>
                             <div class="form-group mb-2">
                                 <label for="exampleFormControlTextarea3">Nota</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea3" rows="2"></textarea>
+                                <textarea class="form-control" id="nota" rows="2" style="resize: none;" maxlength="250"></textarea>
                               </div>
                         </form>                        
                       </li>
@@ -160,15 +164,12 @@
                         <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
                             <button type="button" class="btn btn-light" id="opcion-pago-tarjeta">
                                 <img src="https://cheltenham-gin.co.uk/wp-content/uploads/2021/02/Visa-mastercard-logos.png" width="30"> Pagar con Tarjeta de Débito / Crédito</button>
-                            <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModalYape">
+                            <button class="btn btn-light" ><!--data-bs-toggle="modal" data-bs-target="#exampleModalYape"-->
                                 <img src="https://www.yape.com.pe/assets/images/logo.png" width="30" /> Pagar con Yape
                             </button>
-                            <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModalPlin">
+                            <button class="btn btn-light"><!--data-bs-toggle="modal" data-bs-target="#exampleModalPlin"-->
                                 <img src="https://seeklogo.com/images/P/plin-logo-967A4AF583-seeklogo.com.png" width="30" /> Pagar con Plin
                             </button>
-                            <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModalTunki">
-                                <img src="https://play-lh.googleusercontent.com/LsswrOsVczPejpm9QAGCb-AsFebaRdO5lEmY7_VkOpG_KvICCyna07_P04g5Owz9gGM" width="30" /> Pagar con Tunki
-                            </button> 
                           </div>                                               
                       </li>
                     </ul>

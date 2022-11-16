@@ -18,6 +18,13 @@ document.addEventListener("DOMContentLoaded", function() {
     cuponAplicarButton.onclick = () => {
         canjearCupon();
     };
+
+    let pagoTarjetaButton = document.getElementById("opcion-pago-tarjeta");
+    pagoTarjetaButton.onclick = () => {
+        if(isFormValid()) {
+
+        }
+    };
 });
 
 // Carga de productos
@@ -107,4 +114,48 @@ async function canjearCupon() {
     } else {
         alert("Debe ingresar un código");
     }
+}
+
+// validación del formulario
+
+function isFormValid() {
+    let nombreCompleto = document.getElementById("nombre-completo").value.trim();
+    let celular = document.getElementById("celular").value.trim();
+    let distrito = document.getElementById("distrito").value;
+    let direccion = document.getElementById("direccion").value.trim();
+
+    let regexOnlyLettersWithTildeAndSpaces = /^[a-zA-ZÀ-ú\s]*$/;  
+    let regexOnlyNumbers = /^[0-9]*$/;  
+
+    if (nombreCompleto.length == 0) {
+        document.getElementById("nombre-completo").focus();
+        alert("Debe ingresar su nombre completo");
+        return false;
+    } else if (!nombreCompleto.match(regexOnlyLettersWithTildeAndSpaces)) {
+        document.getElementById("nombre-completo").focus();
+        alert("El nombre solo debe contener letras y espacios");
+        return false;
+    }
+
+    if (celular.length == 0) {
+        document.getElementById("celular").focus();
+        alert("Debe ingresar su celular");
+        return false;
+    } else if (!celular.match(regexOnlyNumbers)) {
+        document.getElementById("celular").focus();
+        alert("El celular solo debe contener números");
+        return false;
+    }
+
+    if (distrito == "") {
+        document.getElementById("distrito").focus();
+        alert("Debe seleccionar un distrito");
+    }
+
+    if (direccion.length == 0) {
+        document.getElementById("direccion").focus();
+        alert("Debe ingresar una dirección");
+    }
+
+    return true;
 }
