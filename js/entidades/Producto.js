@@ -19,6 +19,7 @@ export class Producto {
     getCardHTML() {
         return `
             <img src="${this.images[0]}" width="100" heigth="100">
+            <p>S/.${this.precio}</p>
             <a href="producto.html?id=${this.id}">
                 ${this.nombre}
             </a>
