@@ -9,7 +9,15 @@ export class Review {
 
     getHTML() {
         return `
-        ${this.nombre} (${this.fecha}): ${this.comentario}
+        <div class="card">
+        <div class="card-header">
+        ${this.nombre} (${this.fecha})
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Puntuación: ${this.puntos}/5</h5>
+            <p class="card-text">${this.comentario}</p>
+        </div>
+        </div>
         `;
     }
 }

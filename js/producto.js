@@ -18,9 +18,12 @@ document.addEventListener("DOMContentLoaded", function() {
         cargarImagenes();
         cargarInformacion();
         // eventos
-        document.getElementById("agregar-favoritos").onclick = (e) => agregarFavoritos(e);
-        document.getElementById("eliminar-favoritos").onclick = (e) => eliminarFavoritos(e);
+        //document.getElementById("agregar-favoritos").onclick = (e) => agregarFavoritos(e);
+        //document.getElementById("eliminar-favoritos").onclick = (e) => eliminarFavoritos(e);
         document.getElementById("agregar-carrito").onclick = (e) => agregarCarrito(e);
+
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
     });
 
     loadReviews();
@@ -32,9 +35,21 @@ function cargarImagenes() {
     let mini1 = document.getElementById("mini-1");
     let mini2 = document.getElementById("mini-2");
     let mini3 = document.getElementById("mini-3");
+    let imagenCentral = document.getElementById("producto-imagen-central");
+    imagenCentral.src = producto.images[0];
     mini1.src = producto.images[0];
     mini2.src = producto.images[1];
     mini3.src = producto.images[2];
+    mini1.onclick = (e) => cambiarImagen(e);
+    mini2.onclick = (e) => cambiarImagen(e);
+    mini3.onclick = (e) => cambiarImagen(e);
+}
+
+function cambiarImagen(e) {
+    let imagenCentral = document.getElementById("producto-imagen-central");
+    let target = e.target;
+    imagenCentral.src = target.src;
+    alert("d");
 }
 
 function cargarInformacion() {
@@ -44,6 +59,8 @@ function cargarInformacion() {
     let productoStock = document.getElementById("producto-stock");
     productoNombre.innerHTML = producto.nombre;
     productoPrecio.innerHTML = producto.precio.toFixed(2);
+    productoDescripcion.innerHTML = producto.detalle;
+    productoStock.innerHTML = producto.stock;
 }
 
 async function loadProducto() {
@@ -52,18 +69,20 @@ async function loadProducto() {
 
     document.title = `DomoHogar - ${producto.nombre}`;
 
+    document.getElementById("agregar-carrito").setAttribute("data-producto-id", producto.id);
+
     // muestra informacion del producto
-    document.getElementById("opciones").innerHTML += producto.getHTML();
+    //document.getElementById("opciones").innerHTML += producto.getHTML();
 
     // muestra si es favorito o no
-    if(favoritoDAO.isFavorite(id)) {
+    /*if(favoritoDAO.isFavorite(id)) {
         document.getElementById("opciones").innerHTML += "Es favorito";
     } else {
         document.getElementById("opciones").innerHTML += "Márcalo como favorito";
-    }
+    }*/
 
     // muestra botones
-    document.getElementById("opciones").innerHTML += `
+    /*document.getElementById("opciones").innerHTML += `
     <button id="agregar-favoritos" data-producto-id="${producto.id}" data-nombre="${producto.nombre}" data-imagen="imagen.jpg">Agregar a Favoritos</button>
     <button id="eliminar-favoritos" data-producto-id="${producto.id}">Eliminar de Favoritos</button>
     `;
@@ -71,12 +90,12 @@ async function loadProducto() {
     // muestra botón de agregar a carrito
     document.getElementById("opciones").innerHTML += `
     <button id="agregar-carrito" data-producto-id="${producto.id}">Agregar al carrito</button>
-    `;
+    `;*/
 
     // muestra productos relacionados
     for(let relacionadoId of producto.relacionados) {
         let productoRelacionado = productoDAO.localFetchById(relacionadoId);
-        document.getElementById("relacionados").innerHTML += `<a href="producto.html?id=${relacionadoId}">${productoRelacionado.nombre}</a><br>`;
+        document.getElementById("relacionados").innerHTML += `${productoRelacionado.getCardHTML()}`;
     }
 }
 
@@ -107,5 +126,4 @@ function eliminarFavoritos(e) {
 function agregarCarrito(e) {
     let productoId = parseInt(e.target.getAttribute("data-producto-id"));
     carritoDAO.addItem(productoId);
-    alert("Agregado!");
 }

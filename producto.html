@@ -68,21 +68,21 @@
                 <div class="d-flex flex-column">
                 <img
                     src=""
-                    style="width: 5rem"
+                    style="width: 5rem;cursor: pointer;"
                     class="img-fluid border mb-2"
                     alt=""
                     id="mini-1"
                 />
                 <img
                     src=""
-                    style="width: 5rem"
+                    style="width: 5rem;cursor: pointer;"
                     class="img-fluid border mb-2"
                     alt=""
                     id="mini-2"
                 />
                 <img
                     src=""
-                    style="width: 5rem"
+                    style="width: 5rem;cursor: pointer;"
                     class="img-fluid border mb-2"
                     alt=""
                     id="mini-3"
@@ -91,14 +91,15 @@
             </div>
             <div class="col-auto">
                 <img
-                src="https://coolboxpe.vtexassets.com/arquivos/ids/180863-800-auto?v=637496254402200000&width=800&height=auto&aspect=true"
+                src=""
                 class="img-fluid border"
                 style="width: 30rem; max-height:40rem;"
                 alt=""
+                id="producto-imagen-central"
                 />
             </div>
             <div class="col">
-                <h4 id="producto-nombre"></h4>
+                <h2 id="producto-nombre"></h2>
                 <hr />
                 <p class="h3">Precio: S/ <strong class="h1 text-primary" id="producto-precio"></strong></p>
                 <p>Stock: <span class="text-secondary fw-bold" id="producto-stock"></span></p>
@@ -106,34 +107,31 @@
                 <p id="producto-descripcion">
                 
                 </p>
-                <button type="button" class="btn btn-primary w-50 my-5 d-block m-auto" id="add" data-bs-container="body" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="top" data-bs-content="Listo! Producto añadido, <a href='carrito.html' title='test add link'>Ir al carrito</a>">
+                <button type="button" class="btn btn-primary w-50 my-5 d-block m-auto" id="agregar-carrito" data-producto-id="" data-bs-container="body" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="top" data-bs-content="Listo! Producto añadido, <a href='carrito.html' title='test add link'>Ir al carrito</a>">
                 Añadir al carrito
                 </button>
                 <ul style = "list-style-type: none">
                 <li><img src="https://cdn.icon-icons.com/icons2/1849/PNG/96/fast-delivery_116471.png" height="30px" width="30px"> &nbsp; Express
                     Compra HOY y recíbelo MAÑANA</li><br>
                 <li><img src="https://cdn.icon-icons.com/icons2/2331/PNG/96/food_delivery_meal_order_icon_142268.png" height="30px" width="30px"> &nbsp; Delivery GRATIS
-                    Por compras desde S/99</li><br>
-                <li><img src="https://cdn.icon-icons.com/icons2/2989/PNG/96/address_delivery_map_tracking_distribution_icon_187242.png" height="30px" width="30px"> &nbsp; Revisa tu pedido
-                    Ingresa tu N° pedido y conoce su estado.</li><br>
+                    Por compras desde S/199</li><br>
+                <li><img src="https://cdn.icon-icons.com/icons2/2989/PNG/96/address_delivery_map_tracking_distribution_icon_187242.png" height="30px" width="30px"> &nbsp; <a href="seguimiento.html">Revisa tu pedido</a> Ingresa tu N° pedido y conoce su estado.</li><br>
                 </ul>
             </div>
             </div>
+            <div class="row">
+                <h3 class="my-3">Reseñas</h3>
+                <div id="reviews">
+                    
+                </div>
+            </div>
+            <div class="row">
+                <h3>Productos relacionados</h3>
+                <div id="relacionados" class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+                    
+                </div>
+            </div>
     </div>
-        
-    <div class="container">
-        <div id="opciones">
-
-        </div>
-        <div id="reviews">
-    
-        </div>
-        <div id="relacionados">
-            
-        </div>
-        <a href="carrito.html">Ir al carrito</a>
-    </div>
-
 <!---footer---------------------------------------->
 
 <footer class="bg-dark pt-5 pb-1">
