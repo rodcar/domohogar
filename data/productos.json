@@ -9,7 +9,7 @@
         ],
         "marca": "NEXXT",
         "precio": 109.9,
-        "categoria": "Focos",
+        "categoria": "Iluminación Smart",
         "relacionados": [
             1,
             2
@@ -27,7 +27,7 @@
         ],
         "marca": "XIAOMI",
         "precio": 69.0,
-        "categoria": "Focos",
+        "categoria": "Iluminación Smart",
         "relacionados": [
             1,
             2
@@ -45,7 +45,7 @@
         ],
         "marca": "OPALUX",
         "precio": 61.9,
-        "categoria": "Focos",
+        "categoria": "Iluminación Smart",
         "relacionados": [
             1,
             2
@@ -65,7 +65,7 @@
         ],
         "marca": "PHILIPS HUE",
         "precio": 99.0,
-        "categoria": "Focos",
+        "categoria": "Iluminación Smart",
         "relacionados": [
             1,
             2
@@ -83,7 +83,7 @@
         ],
         "marca": "XIAOMI",
         "precio": 189.9,
-        "categoria": "Focos",
+        "categoria": "Iluminación Smart",
         "relacionados": [
             1,
             2
@@ -101,7 +101,7 @@
         ],
         "marca": "Wiz",
         "precio": 59.9,
-        "categoria": "Focos",
+        "categoria": "Iluminación Smart",
         "relacionados": [
             1,
             2
@@ -227,7 +227,7 @@
         ],
         "marca": "XIAOMI",
         "precio": 109,
-        "categoria": "WIFI",
+        "categoria": "WiFi",
         "relacionados": [1, 2],
         "detalle": "Modelo: RA75. Ram: 64mb. Estándares: IEEE 802.11ac / n / a 5 GHz, IEEE 802.11n / b / g 2.4 Ghz. Velocidades de WiFi: 5 GHz: 867 Mbps (802.11ac, 2 * 2 @ 80MHz) 2.4 GHz: 300 Mbs (802.11n, 2 * 2 @ 40MH). Modos: Modo extensor de rango Modo de punto de acceso. Seguridad inalámbrica: WPA-PSK / WPA2-P..",
         "stock": 10
@@ -242,7 +242,7 @@
         ],
         "marca": "NEXXT",
         "precio": 259,
-        "categoria": "WIFI",
+        "categoria": "WiFi",
         "relacionados": [1, 2],
         "detalle": "Esta solución ofrece 112m2 extra de transmisión de la señal con la integración de cada nodo, lo cual se traduce en un alcance mucho mayor al de un router convencional.",
         "stock": 10
@@ -257,7 +257,7 @@
         ],
         "marca": "NEXXT",
         "precio": 729.90,
-        "categoria": "WIFI",
+        "categoria": "WiFi",
         "relacionados": [1, 2],
         "detalle": "Deco usa un sistema de unidades para lograr una cobertura Wi-Fi perfecta para el hogar ? ¡Elimina las zonas de baja señal de una vez por todas! Con la avanzada tecnología Deco Mesh, los dispositivos Deco trabajan juntos para formar una red unificada en tu hogar, con el mismo nombre de red. Los dispositivos cambian automáticamente entre Decos a medida que te desplazas por tu hogar para obtener las velocidades más rápidas posibles.",
         "stock": 10
@@ -272,7 +272,7 @@
         ],
         "marca": "Mercusys",
         "precio": 79,
-        "categoria": "WIFI",
+        "categoria": "WiFi",
         "relacionados": [1, 2],
         "detalle": "Ideal para ampliar una red inalámbrica de alta velocidad escalable o para conectar múltiples dispositivos.",
         "stock": 10
@@ -287,7 +287,7 @@
         ],
         "marca": "TP-LINK",
         "precio": 179,
-        "categoria": "WIFI",
+        "categoria": "WiFi",
         "relacionados": [1, 2],
         "detalle": "Dimensiones: 9.4 x 5.4 x 4 cm, El TL-WPA4220 transforma el circuito eléctrico existente de su hogar en una red de alta velocidad sin necesidad de cables nuevos o perforación., Tipo: Extensor de cobertura, Velocidad: 300Mbps",
         "stock": 10
@@ -302,7 +302,7 @@
         ],
         "marca": "TP-LINK",
         "precio": 59,
-        "categoria": "WIFI",
+        "categoria": "WiFi",
         "relacionados": [1, 2],
         "detalle": "Completamente probado para trabajar con el Raspberry Pi 2 y Raspberry Pi Modelo B +. La tecnología MIMO hace tarifas de transmisión inalámbrica de hasta 150Mbps. La tecnología del CCA realza su stablility señal automáticamente evitando conflictos de canal. Quick Secure Setup, cumple con WPS para la seguridad inalámbrica sin problemas. Encriptación de seguridad inalámbrica fácilmente en un empuje del botón de QSS.",
         "stock": 10
