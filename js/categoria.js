@@ -15,6 +15,8 @@ async function loadListaDeProductos() {
     const categoria = queryStrings.get("cat");
 
     if (categoria != null) {
+        let tituloDiv = document.getElementById("titulo");
+        tituloDiv.innerHTML = categoria;
         productos = await productoDAO.fetchByCategoria(categoria);
     } else {
         productos = await productoDAO.fetchAll();
