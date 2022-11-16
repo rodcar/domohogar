@@ -27,20 +27,28 @@ async function loadProducto() {
     await productoDAO.fetchAll();
     let producto = productoDAO.localFetchById(id);
 
+    // muestra informacion del producto
+    document.getElementById("opciones").innerHTML += producto.getHTML();
+
+    // muestra si es favorito o no
     if(favoritoDAO.isFavorite(id)) {
         document.getElementById("opciones").innerHTML += "Es favorito";
     } else {
         document.getElementById("opciones").innerHTML += "Márcalo como favorito";
     }
 
-    document.getElementById("opciones").innerHTML += producto.getHTML();
+    // muestra botones
     document.getElementById("opciones").innerHTML += `
     <button id="agregar-favoritos" data-producto-id="${producto.id}" data-nombre="${producto.nombre}" data-imagen="imagen.jpg">Agregar a Favoritos</button>
     <button id="eliminar-favoritos" data-producto-id="${producto.id}">Eliminar de Favoritos</button>
     `;
+    
+    // muestra botón de agregar a carrito
     document.getElementById("opciones").innerHTML += `
     <button id="agregar-carrito" data-producto-id="${producto.id}">Agregar al carrito</button>
     `;
+
+    // muestra productos relacionados
     for(let relacionadoId of producto.relacionados) {
         let productoRelacionado = productoDAO.localFetchById(relacionadoId);
         document.getElementById("relacionados").innerHTML += `<a href="producto.html?id=${relacionadoId}">${productoRelacionado.nombre}</a><br>`;
