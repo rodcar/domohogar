@@ -20,6 +20,7 @@ export class Producto {
         return `
             <img src="${this.images[0]}" width="100" heigth="100">
             <p>S/.${this.precio}</p>
+            <p>${this.marca}</p>
             <a href="producto.html?id=${this.id}">
                 ${this.nombre}
             </a>
