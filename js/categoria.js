@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
 async function loadListaDeProductos() {
     let queryStrings = new URLSearchParams(window.location.search);
     const categoria = queryStrings.get("cat");
+    const q = queryStrings.get("q");
 
     if (categoria != null) {
         let tituloDiv = document.getElementById("titulo");
@@ -20,7 +21,14 @@ async function loadListaDeProductos() {
         document.title = `DomoHogar - ${categoria}`;
         productos = await productoDAO.fetchByCategoria(categoria);
     } else {
-        productos = await productoDAO.fetchAll();
+        if (q != null) {
+            let tituloDiv = document.getElementById("titulo");
+            tituloDiv.innerHTML = `Resultados: <span class="text-primary">${q}</span>`;
+            document.title = `DomoHogar - Resultados de búsqueda`;
+            productos = await productoDAO.buscar(q);
+        } else {
+            productos = await productoDAO.fetchAll();
+        }
     }
     
     mostrarProductos(productos);
