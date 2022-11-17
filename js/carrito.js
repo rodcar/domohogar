@@ -50,7 +50,15 @@ function loadListaDeProductos() {
         aumentarButtons[i].onclick = (e) => aumentarCarrito(e);
         eliminarButtons[i].onclick = (e) => eliminarCarrito(e);
     }
+
+    // descuento de entrega entrega-precio
     let entrega = 15;
+    if(subtotal >= 199) {
+        entrega = 0;
+        document.getElementById("entrega-precio").innerHTML = `S/.0`;
+    } else {
+        document.getElementById("entrega-precio").innerHTML = `S/.15`;
+    }
 
     if(cupon !== null) {
         if(cupon.tipo == "descuento") {
