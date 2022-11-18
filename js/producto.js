@@ -49,7 +49,6 @@ function cambiarImagen(e) {
     let imagenCentral = document.getElementById("producto-imagen-central");
     let target = e.target;
     imagenCentral.src = target.src;
-    alert("d");
 }
 
 function cargarInformacion() {
