@@ -38,4 +38,41 @@
       height: 11em;
     }
   }
+
+  .categorias{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    
+    text-align: center;
+  }
+  .tituloCategoria{
+    font-weight: 700;
+
+  }
+  .categorias img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card img{
+    object-fit:contain;
+  }
+
+  .card-title{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+  }
+
+  .card-title:hover{
+overflow: visible;
+margin-bottom: 20px;
+  }
   
+  .size-icon{
+    font-size: 80px;
+  }
