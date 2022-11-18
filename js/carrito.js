@@ -20,10 +20,9 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 
     let pagoTarjetaButton = document.getElementById("opcion-pago-tarjeta");
-    pagoTarjetaButton.onclick = () => {
-        openNiubiz();
+    pagoTarjetaButton.onclick = () => {        
         if(isFormValid()) {
-            
+            openNiubiz();
         }
     };
 
