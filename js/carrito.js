@@ -20,10 +20,16 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 
     let pagoTarjetaButton = document.getElementById("opcion-pago-tarjeta");
-    pagoTarjetaButton.onclick = () => {
+    pagoTarjetaButton.onclick = () => {        
         if(isFormValid()) {
             openNiubiz();
         }
+    };
+
+    document.getElementById("notificar-plin").onclick = notificarPago;
+    document.getElementById("notificar-yape").onclick = notificarPago;
+    document.getElementById("notificar-niubiz").onclick = () => {
+        alert("el pago se ha realizado correctamente");
     };
 });
 
@@ -71,11 +77,19 @@ function loadListaDeProductos() {
 
     // datos del pago
     document.getElementById("subtotal").innerHTML = `S/.${subtotal.toFixed(2)}`;
-    document.getElementById("total").innerHTML = `S/.${(subtotal + entrega - descuento).toFixed(2)}`;
+    let totalTexto = `S/.${(subtotal + entrega - descuento).toFixed(2)}`;
+    document.getElementById("total").innerHTML = totalTexto;
+    document.getElementById("totalYape").innerHTML = totalTexto;
+    document.getElementById("totalPlin").innerHTML = totalTexto;
+    document.getElementById("total-modal").innerHTML = totalTexto;
     document.getElementById("item-count").innerHTML = carritoDAO.items.length;
 }
 
 // Eventos
+
+function notificarPago() {
+    alert("El pago se ha notificado");
+}
 
 function reducirCarrito(e) {
     let productoId = parseInt(e.target.getAttribute("data-producto-id"));
@@ -158,11 +172,13 @@ function isFormValid() {
     if (distrito == "") {
         document.getElementById("distrito").focus();
         alert("Debe seleccionar un distrito");
+        return false;
     }
 
     if (direccion.length == 0) {
         document.getElementById("direccion").focus();
         alert("Debe ingresar una dirección");
+        return false;
     }
 
     return true;

@@ -6,4 +6,11 @@ document.addEventListener("DOMContentLoaded", function() {
             window.location.href = "categoria.html?q=" + query;
         }
     };
+
+    document.getElementById("buscador-value").addEventListener("keyup", function(event) {
+        event.preventDefault();
+        if (event.key === "Enter") {
+            document.getElementById("buscador-button").click();
+        }
+    });
 });
