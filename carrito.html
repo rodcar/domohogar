@@ -242,11 +242,98 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          
+            <div class="d-flex justify-content-center">
+                <img src="https://proveedores.niubiz.com.pe/assets/media/logos/logo.png" alt="Niubiz" width="250px">
+            </div>
+            <hr>
+            <div class="input-group mb-3">
+                <span class="input-group-text">
+                    <i class="bi bi-credit-card"></i>
+                </span>
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="numero" placeholder="Username">
+                  <label for="floatingInputGroup1">Número de tarjeta</label>
+                </div>
+            </div>
+            <div class="row g-2 mb-3">
+                <div class="col-6">
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-calendar"></i>
+                        </span>
+                        <div class="form-floating">
+                          <input type="text" class="form-control" id="vencimiento" placeholder="Username">
+                          <label for="floatingInputGroup1">Número de tarjeta</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-credit-card"></i>
+                        </span>
+                        <div class="form-floating">
+                          <input type="number" class="form-control" id="cvv" placeholder="Username">
+                          <label for="floatingInputGroup1">CVV</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-2 mb-3">
+                <div class="col-6">
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-person"></i>
+                        </span>
+                        <div class="form-floating">
+                          <input type="text" class="form-control" id="nombre" placeholder="Username">
+                          <label for="floatingInputGroup1">Nombre</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-person"></i>
+                        </span>
+                        <div class="form-floating">
+                          <input type="text" class="form-control" id="apellido" placeholder="Username">
+                          <label for="floatingInputGroup1">Apellido</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">
+                    <i class="bi bi-envelope"></i>
+                </span>
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="email" placeholder="Username">
+                  <label for="floatingInputGroup1">Email</label>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">
+                    <i class="bi bi-pie-chart"></i>
+                </span>
+                <div class="form-floating">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Seleccionar</option>
+                        <option value="0">0 cuotas</option>
+                        <option value="1">1 cuota mensual</option>
+                        <option value="2">2 cuotas mensuales</option>
+                        <option value="3">3 cuotas mensuales</option>
+                        <option value="4">4 cuotas mensuales</option>
+                        <option value="5">5 cuotas mensuales</option>
+                        <option value="6">6 cuotas mensuales</option>
+                      </select>
+                  <label for="floatingInputGroup1">Cuotas</label>
+                </div>
+            </div>                                
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary" id="notificar-pago">Pagar <span id="total-modal"></span></button>
+          <button type="button" class="btn btn-primary" id="notificar-niubiz" data-bs-dismiss="modal">Pagar <span id="total-modal"></span></button>
         </div>
       </div>
     </div>

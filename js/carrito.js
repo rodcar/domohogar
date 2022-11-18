@@ -21,13 +21,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let pagoTarjetaButton = document.getElementById("opcion-pago-tarjeta");
     pagoTarjetaButton.onclick = () => {
+        openNiubiz();
         if(isFormValid()) {
-            openNiubiz();
+            
         }
     };
 
     document.getElementById("notificar-plin").onclick = notificarPago;
     document.getElementById("notificar-yape").onclick = notificarPago;
+    document.getElementById("notificar-niubiz").onclick = () => {
+        alert("el pago se ha realizado correctamente");
+    };
 });
 
 // Carga de productos
@@ -78,6 +82,7 @@ function loadListaDeProductos() {
     document.getElementById("total").innerHTML = totalTexto;
     document.getElementById("totalYape").innerHTML = totalTexto;
     document.getElementById("totalPlin").innerHTML = totalTexto;
+    document.getElementById("total-modal").innerHTML = totalTexto;
     document.getElementById("item-count").innerHTML = carritoDAO.items.length;
 }
 
@@ -168,11 +173,13 @@ function isFormValid() {
     if (distrito == "") {
         document.getElementById("distrito").focus();
         alert("Debe seleccionar un distrito");
+        return false;
     }
 
     if (direccion.length == 0) {
         document.getElementById("direccion").focus();
         alert("Debe ingresar una dirección");
+        return false;
     }
 
     return true;
