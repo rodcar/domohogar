@@ -219,10 +219,10 @@
                         <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
                             <button type="button" class="btn btn-light" id="opcion-pago-tarjeta">
                                 <img src="https://cheltenham-gin.co.uk/wp-content/uploads/2021/02/Visa-mastercard-logos.png" width="30"> Pagar con Tarjeta de Débito / Crédito</button>
-                            <button class="btn btn-light" ><!--data-bs-toggle="modal" data-bs-target="#exampleModalYape"-->
+                            <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModalYape"><!--data-bs-toggle="modal" data-bs-target="#exampleModalYape"-->
                                 <img src="https://www.yape.com.pe/assets/images/logo.png" width="30" /> Pagar con Yape
                             </button>
-                            <button class="btn btn-light"><!--data-bs-toggle="modal" data-bs-target="#exampleModalPlin"-->
+                            <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModalPlin"><!--data-bs-toggle="modal" data-bs-target="#exampleModalPlin"-->
                                 <img src="https://seeklogo.com/images/P/plin-logo-967A4AF583-seeklogo.com.png" width="30" /> Pagar con Plin
                             </button>
                           </div>                                               
@@ -246,7 +246,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Pagar <span id="total-modal"></span></button>
+          <button type="button" class="btn btn-primary" id="notificar-pago">Pagar <span id="total-modal"></span></button>
         </div>
       </div>
     </div>
@@ -296,7 +296,7 @@
             </div>
             <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary">Notificar pago por Yape</button>
+            <button type="button" class="btn btn-primary" id="notificar-yape" data-bs-dismiss="modal">Notificar pago por Yape</button>
             </div>
         </div>
         </div>
@@ -327,7 +327,7 @@
             </div>
             <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary">Notificar pago por Plin</button>
+            <button type="button" class="btn btn-primary" id="notificar-plin" data-bs-dismiss="modal">Notificar pago por Plin</button>
             </div>
         </div>
         </div>

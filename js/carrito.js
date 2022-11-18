@@ -25,6 +25,9 @@ document.addEventListener("DOMContentLoaded", function() {
             openNiubiz();
         }
     };
+
+    document.getElementById("notificar-plin").onclick = notificarPago;
+    document.getElementById("notificar-yape").onclick = notificarPago;
 });
 
 // Carga de productos
@@ -71,11 +74,18 @@ function loadListaDeProductos() {
 
     // datos del pago
     document.getElementById("subtotal").innerHTML = `S/.${subtotal.toFixed(2)}`;
-    document.getElementById("total").innerHTML = `S/.${(subtotal + entrega - descuento).toFixed(2)}`;
+    let totalTexto = `S/.${(subtotal + entrega - descuento).toFixed(2)}`;
+    document.getElementById("total").innerHTML = totalTexto;
+    document.getElementById("totalYape").innerHTML = totalTexto;
+    document.getElementById("totalPlin").innerHTML = totalTexto;
     document.getElementById("item-count").innerHTML = carritoDAO.items.length;
 }
 
 // Eventos
+
+function notificarPago() {
+    alert("El pago se ha notificado");
+}
 
 function reducirCarrito(e) {
     let productoId = parseInt(e.target.getAttribute("data-producto-id"));
