@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("notificar-plin").onclick = notificarPago;
     document.getElementById("notificar-yape").onclick = notificarPago;
     document.getElementById("notificar-niubiz").onclick = () => {
-        alert("el pago se ha realizado correctamente");
+        alert("el pago se ha realizado correctamente. Código de pedido: PERU2022000002");
     };
 });
 
