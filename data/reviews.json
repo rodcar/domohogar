@@ -19,5 +19,19 @@
         "puntos": 3,
         "comentario": "Regular.",
         "fecha": "15/11/2020"
+    },
+    {
+        "productoId": 6,
+        "nombre": "Juan Rodriguez",
+        "puntos": 4,
+        "comentario": "Cumple con lo prometido, está disponible para inglés y español.",
+        "fecha": "15/11/2021"
+    },
+    {
+        "productoId": 6,
+        "nombre": "Miguel Carranza",
+        "puntos": 4,
+        "comentario": "Sí pude conectarlo con dispositivos XIAOMI, recomendado.",
+        "fecha": "11/07/2020"
     }
 ]
